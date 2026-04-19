@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="a" class="com.model.Address" autowire-candidate="false"> 
+<constructor-arg name="city" value="surat"></constructor-arg>
+<constructor-arg name="state" value="gujarat"></constructor-arg>
+</bean>
+
+<bean id="b" class="com.model.Address"> 
+<constructor-arg name="city" value="tiruvantpuram"></constructor-arg>
+<constructor-arg name="state" value="chennai"></constructor-arg>
+</bean>
+
+<bean id="s" class="com.model.Student" autowire="constructor">
+<constructor-arg name="id" value="101"></constructor-arg>
+<constructor-arg name="name" value="suresh"></constructor-arg>
+</bean>
+
+</beans>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="a" class="com.model.Address" autowire-candidate="false"> 
+<property name="city" value="nashik"></property>
+<property name="state" value="maharashtra"></property>
+</bean>
+
+<bean id="b" class="com.model.Address"> 
+<property name="city" value="Sambhajinagar"></property>
+<property name="state" value="maharashtra"></property>
+</bean>
+
+<bean id="s" class="com.model.Student" autowire="byType">
+<property name="id" value="101"></property>
+<property name="name" value="suresh"></property>
+</bean>
+
+</beans>
